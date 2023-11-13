@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: black;
+}
+.navbar span {
+  font-size: xxx-large;
+  font-weight: bolder;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.navbar ul a {
+  text-decoration: none;
+  margin: 1rem;
+  color: #000;
+}
+.main {
+  margin-top: 2rem;
+  width: 100rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.main .imgColor {
+  width: 50rem;
+}
+.main img {
+  width: 100%;
+}
