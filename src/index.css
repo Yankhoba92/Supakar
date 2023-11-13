@@ -18,16 +18,16 @@
   margin: 1rem;
   color: #000;
 }
-.main {
+.main__content {
   margin-top: 2rem;
   width: 100rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-.main .imgColor {
+.main__content .imgColor {
   width: 50rem;
 }
-.main img {
+.main__content img {
   width: 100%;
 }

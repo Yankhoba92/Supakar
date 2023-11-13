@@ -1,29 +1,49 @@
-import React from "react";
-import { useState } from 'react'
-import "../../index.css"
-import ogImg from "../img/original.png"
+import React, { useState } from "react";
+import "../../index.css";
+import ogImg from "../img/original.png";
+import YellowImg from "../img/yellow.png";
+import BlueImg from "../img/blue.png";
+import BlueButon from "./button/Blue";
+import YellowButon from "./button/Yellow";
 
 function Personalisation() {
+  const [currentImage, setCurrentImage] = useState(ogImg);
+
+
+  const handleBlueButtonClick = () => {
+    setCurrentImage(BlueImg);
+  };
+
+
+  const handleYellowButtonClick = () => {
+    setCurrentImage(currentImage);
+
+  };
 
   return (
     <>
-    <div className="main">
-      <div className="imgColor">
-        <img src={ogImg} alt="original" />
+      <div className="main">
+        <div className="main__content">
+          <div className="imgColor">
+            <img src={YellowImg} alt="original" />
+          </div>
+          <div className="description">
+            <h1>Personalisation</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque reiciendis animi veritatis, molestiae odio deleniti? Itaque nam voluptate inventore, recusandae fugiat dolores? Doloremque asperiores eaque ducimus neque voluptatem, eum labore.
+              Suscipit rerum eos, laborum quos aliquam, maxime dolor similique facilis ut nisi sit quam ipsa odio doloremque enim necessitatibus a veniam. Ad quisquam tenetur exercitationem ipsa aspernatur eum adipisci molestiae.
+              Beatae veritatis laudantium, dolore eius aut dolorem incidunt! Dolor voluptatibus quo maxime natus dolorem magni ea necessitatibus at iure explicabo veniam facilis laborum suscipit, labore expedita sint perspiciatis modi ipsum?
+              Velit animi veritatis ipsum tenetur obcaecati officiis reiciendis tempora odio asperiores hic incidunt vero laborum aliquid sit molestiae ex eaque repellat voluptas exercitationem quam aut sint, consectetur cupiditate! Expedita, asperiores.
+              At eum culpa distinctio. Maiores nulla omnis nihil distinctio ratione reprehenderit eaque, laboriosam at ut facilis doloribus quos neque rem. Nemo, aliquam error non excepturi recusandae amet repudiandae. Molestias, odio.
+            </p>
+          </div>
+        </div>
+        {/* Utilisez des fonctions fléchées pour passer les paramètres corrects */}
+        <BlueButon onClick={handleBlueButtonClick} />
+        <YellowButon onClick={handleYellowButtonClick} />
       </div>
-      <div className="description">
-        <h1>Personalisation</h1> 
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit totam accusantium modi numquam assumenda, dolorem ullam aliquid! Tenetur earum placeat vel facere nisi quidem quas esse labore, nihil assumenda reprehenderit.
-        Animi expedita aliquid assumenda perspiciatis possimus error, rem quam debitis repellat, pariatur amet dolor ea quo minima, porro nostrum laboriosam. Veritatis exercitationem delectus ut nobis assumenda similique omnis commodi asperiores.
-        Pariatur repellat libero illo recusandae in dolorem beatae, ut animi id deleniti vero reprehenderit aliquam rerum illum perferendis, maiores repudiandae quidem ipsa nemo! Ut mollitia odio, hic veritatis vero iure?
-        Mollitia laboriosam deserunt laborum quos eum exercitationem rerum pariatur cum, totam quam quis accusantium hic alias enim explicabo unde est omnis quisquam earum reiciendis iure adipisci. Quaerat tempore accusamus labore?
-        Sequi veniam a perferendis aperiam, dolorum veritatis porro sit fugit iure saepe quam repellat amet perspiciatis quidem eos excepturi commodi debitis velit. Aspernatur sapiente nihil illo eum alias ad ratione.</p>
-      </div>
-        
-    </div>
-               
     </>
-  )
+  );
 }
 
-export default Personalisation
+export default Personalisation;
