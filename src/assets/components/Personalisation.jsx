@@ -3,21 +3,14 @@ import "../../index.css";
 import ogImg from "../img/original.png";
 import YellowImg from "../img/yellow.png";
 import BlueImg from "../img/blue.png";
-import BlueButon from "./button/Blue";
-import YellowButon from "./button/Yellow";
+import GreenImg from "../img/green.png";
+import Button from "./Button";
 
 function Personalisation() {
   const [currentImage, setCurrentImage] = useState(ogImg);
 
-
-  const handleBlueButtonClick = () => {
-    setCurrentImage(BlueImg);
-  };
-
-
-  const handleYellowButtonClick = () => {
-    setCurrentImage(currentImage);
-
+  const handleButtonClick = (newImage) => {
+    setCurrentImage(newImage);
   };
 
   return (
@@ -25,22 +18,23 @@ function Personalisation() {
       <div className="main">
         <div className="main__content">
           <div className="imgColor">
-            <img src={YellowImg} alt="original" />
+            <img src={currentImage} alt="original" />
           </div>
           <div className="description">
             <h1>Personalisation</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque reiciendis animi veritatis, molestiae odio deleniti? Itaque nam voluptate inventore, recusandae fugiat dolores? Doloremque asperiores eaque ducimus neque voluptatem, eum labore.
-              Suscipit rerum eos, laborum quos aliquam, maxime dolor similique facilis ut nisi sit quam ipsa odio doloremque enim necessitatibus a veniam. Ad quisquam tenetur exercitationem ipsa aspernatur eum adipisci molestiae.
-              Beatae veritatis laudantium, dolore eius aut dolorem incidunt! Dolor voluptatibus quo maxime natus dolorem magni ea necessitatibus at iure explicabo veniam facilis laborum suscipit, labore expedita sint perspiciatis modi ipsum?
-              Velit animi veritatis ipsum tenetur obcaecati officiis reiciendis tempora odio asperiores hic incidunt vero laborum aliquid sit molestiae ex eaque repellat voluptas exercitationem quam aut sint, consectetur cupiditate! Expedita, asperiores.
-              At eum culpa distinctio. Maiores nulla omnis nihil distinctio ratione reprehenderit eaque, laboriosam at ut facilis doloribus quos neque rem. Nemo, aliquam error non excepturi recusandae amet repudiandae. Molestias, odio.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est molestias sapiente doloribus iusto, fugit animi ea labore fuga sequi minus culpa veniam voluptas id consequuntur eveniet consequatur. Molestias, sint officiis.
+              Est distinctio, quos et nesciunt repudiandae quia cupiditate cum deleniti odit, itaque dolorem modi cumque provident. Reiciendis rerum quasi totam provident expedita tempore aspernatur est adipisci voluptate possimus, illo mollitia.
+              Impedit explicabo doloremque eligendi qui consectetur facere dicta quidem dolorum quia, sapiente deleniti magni quae quis dolor iste deserunt nihil temporibus architecto obcaecati autem modi recusandae veniam? Itaque, eaque mollitia?
+              Sunt ipsam, voluptatem totam eligendi quis, a animi rerum ad, modi placeat asperiores amet facere nihil minus eos nam distinctio nobis iste veritatis! Ab impedit consectetur minus doloremque rem ipsa?
+              Assumenda debitis tempora, quod odio dicta similique, aspernatur voluptate quis eaque non, repudiandae commodi corporis perferendis autem praesentium ab at sapiente doloremque laborum culpa sed qui. Sed delectus deserunt et.
             </p>
           </div>
         </div>
-        {/* Utilisez des fonctions fléchées pour passer les paramètres corrects */}
-        <BlueButon onClick={handleBlueButtonClick} />
-        <YellowButon onClick={handleYellowButtonClick} />
+        <Button label="white" image={ogImg} onClick={() => handleButtonClick(ogImg)} />
+        <Button label="Blue" image={BlueImg} onClick={() => handleButtonClick(BlueImg)} />
+        <Button label="Yellow" image={YellowImg} onClick={() => handleButtonClick(YellowImg)} />
+        <Button label="Green" image={GreenImg} onClick={() => handleButtonClick(GreenImg)} />
       </div>
     </>
   );
