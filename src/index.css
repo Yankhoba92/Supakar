@@ -1,12 +1,18 @@
 body {
-  background-color: #f4f2f2;
+  background-color: #f7f5f5;
   font-family: 'Archivo', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header{
+    background-color: white;
 }
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-shadow: black;
+
 }
 .navbar span {
   font-size: xxx-large;
@@ -39,6 +45,10 @@ body {
 .main__content .description{
   width: 38rem;
   text-align: center;
+}
+.main__content .description p {
+  width: 38rem;
+  text-align: justify;
 }
 .main__content img {
   width: 100%;
