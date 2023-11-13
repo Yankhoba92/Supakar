@@ -1,6 +1,8 @@
 import React from "react";
 import { useState } from 'react'
 import "../../index.css"
+import { NavLink } from "react-router-dom";
+NavLink
 
 function Nav() {
 
@@ -10,10 +12,10 @@ function Nav() {
             <nav className="navbar">
                 <span>Supakar</span>
                 <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Véhicules</a></li>
-                    <li><a href="#">Customizer</a></li>
-                    <li><a href="#">Visite</a></li>
+                    <li><NavLink to="/">Accueil</NavLink></li>
+                    <li><NavLink to="#">Véhicules</NavLink></li>
+                    <li><NavLink to="#">Customizer</NavLink></li>
+                    <li><NavLink to="#">Visite</NavLink></li>
                 </ul>
             </nav>
         </header>

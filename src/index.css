@@ -1,3 +1,7 @@
+body {
+  background-color: #f4f2f2;
+  font-family: 'Archivo', sans-serif;
+}
 .navbar {
   display: flex;
   align-items: center;
@@ -18,21 +22,45 @@
   margin: 1rem;
   color: #000;
 }
-.main__content {
+.main {
   margin-top: 2rem;
+  margin-left: 0;
+  margin-right: 0;
   width: 100rem;
+}
+.main__content {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 .main__content .imgColor {
   width: 50rem;
 }
+.main__content .description{
+  width: 38rem;
+  text-align: center;
+}
 .main__content img {
   width: 100%;
 }
-.main button{
-  width:6rem;
+.main button {
+  width: 6rem;
   height: 6rem;
   margin: 1rem;
+}
+.main .whiteButton {
+  background-color: #ffffff;
+  border: none;
+}
+.main .blueButton {
+  background-color: #282ece;
+  border: none;
+}
+.main .yellowButton {
+  background-color: #f5fc41;
+  border: none;
+}
+.main .greenButton {
+  background-color: #23ac2e;
+  border: none;
 }
