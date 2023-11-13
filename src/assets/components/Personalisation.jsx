@@ -31,10 +31,10 @@ function Personalisation() {
             </p>
           </div>
         </div>
-        <Button label="white" image={ogImg} onClick={() => handleButtonClick(ogImg)} />
-        <Button label="Blue" image={BlueImg} onClick={() => handleButtonClick(BlueImg)} />
-        <Button label="Yellow" image={YellowImg} onClick={() => handleButtonClick(YellowImg)} />
-        <Button label="Green" image={GreenImg} onClick={() => handleButtonClick(GreenImg)} />
+        <Button className="white"  image={ogImg} onClick={() => handleButtonClick(ogImg)} />
+        <Button className="Blue"  image={BlueImg} onClick={() => handleButtonClick(BlueImg)} />
+        <Button className="Yellow"  image={YellowImg} onClick={() => handleButtonClick(YellowImg)} />
+        <Button className="Green"  image={GreenImg} onClick={() => handleButtonClick(GreenImg)} />
       </div>
     </>
   );
