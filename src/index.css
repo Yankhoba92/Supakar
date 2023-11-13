@@ -57,6 +57,7 @@ header{
   width: 6rem;
   height: 6rem;
   margin: 1rem;
+  cursor: pointer;
 }
 .main .whiteButton {
   background-color: #ffffff;

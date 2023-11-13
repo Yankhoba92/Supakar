@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "../../index.css";
-import ogImg from "../img/original.png";
+import originalImg from "../img/original.png";
 import YellowImg from "../img/yellow.png";
 import BlueImg from "../img/blue.png";
 import GreenImg from "../img/green.png";
 import Button from "./Button";
 
 function Personalisation() {
-  const [currentImage, setCurrentImage] = useState(ogImg);
+  const [currentImage, setCurrentImage] = useState(originalImg);
 
   const handleButtonClick = (newImage) => {
     setCurrentImage(newImage);
@@ -45,8 +45,8 @@ function Personalisation() {
             <div className="buttons">
           <Button
             nameClass={"whiteButton"}
-            image={ogImg}
-            onClick={() => handleButtonClick(ogImg)}
+            image={originalImg}
+            onClick={() => handleButtonClick(originalImg)}
           />
           <Button
             nameClass={"blueButton"}

@@ -12,10 +12,10 @@ function Nav() {
             <nav className="navbar">
                 <span>Supakar</span>
                 <ul>
-                    <li><NavLink to="/">Accueil</NavLink></li>
-                    <li><NavLink to="#">Véhicules</NavLink></li>
-                    <li><NavLink to="#">Customizer</NavLink></li>
-                    <li><NavLink to="#">Visite</NavLink></li>
+                <li><NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>Accueil</NavLink></li>
+                    <li>Vehicules</li>
+                    <li><NavLink to="/customizer" className={({ isActive }) => (isActive ? 'active' : '')}>Customizer</NavLink></li>
+                    <li>Visite</li>
                 </ul>
             </nav>
         </header>
